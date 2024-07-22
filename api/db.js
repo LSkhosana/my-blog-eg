@@ -1,9 +1,12 @@
-import mysql from "mysql"
+import mysql from "mysql";
 
 // Creates a connection to the MySQL database
-export const db = mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"@Lesed1skh05",
-    database:"blog"
-})
+const db = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "@Lesed1skh05",
+    database: "blog"
+});
+
+// Export the db connection
+export { db };
